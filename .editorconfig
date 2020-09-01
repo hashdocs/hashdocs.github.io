@@ -1,0 +1,82 @@
+##
+# @overview [EditorConfig][editorconfig] IDE Configurations
+#
+# Provides a series of configurations, based on file extension, to ensure consistency between IDEs when editing files.
+#
+# @see the [EditorConfig][editorconfig] project site for further information.
+#
+# @author Andrew Vaughan [gh:andrewvaughan]
+# @since  0.1.0
+#
+# @change 2020-09-01 [gh:andrewvaughan] Initial creation of tile for formatting consistency.
+
+
+##
+# @section Root Designation
+#
+# Ensures that no `.editorconfig` files are processed above this file.
+#
+# @since 0.1.0
+#
+root = true
+
+
+##
+# @section Editor Configuration Defaults
+#
+# For all files, process with:
+#   - `utf-8` file encoding
+#   - unix-style line endings
+#   - always end with exactly one extra line at the end of the file
+#   - use spaces instead of tabs
+#   - use tab widths of 2 spaces
+#
+# @since 0.1.0
+#
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+indent_style = space
+indent_size = 2
+
+
+##
+# @section Web Editor Configurations
+#
+# Optimize tabbing and sizes for delivery of common HTML files without impacting IDE experience.
+#
+# @since 0.1.0
+#
+[*.html, *.css, *.js]
+indent_style = tab
+indent_size = 2
+
+
+##
+# @section Data Model Editor Configurations
+#
+# Allow for easier readability for YAML and JSON files with larger tab spacing.
+#
+# @since 0.1.0
+#
+[*.yml, *.yaml, *.json]
+indent_style = space
+indent_size = 4
+
+
+##
+# @section Makefile Editor Configurations
+#
+# Ensure we use expected tabs for Makefile.
+#
+# @since 0.1.0
+#
+[Makefile]
+indent_style = tab
+indent_size = 4
+
+
+
+##
+# @reference  [editorconfig]  https://editorconfig.org
