@@ -42,6 +42,18 @@ indent_size = 2
 
 
 ##
+# @section Markdown
+#
+# Configure for GitHub and Jekyll style Markdown.
+#
+# @since 0.1.0
+#
+[*.md, *.markdown]
+indent_style = space
+indent_size = 4
+
+
+##
 # @section Web Editor Configurations
 #
 # Optimize tabbing and sizes for delivery of common HTML files without impacting IDE experience.
